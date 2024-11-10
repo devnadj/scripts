@@ -1,0 +1,1 @@
+Ce dossier contient un ensemble de script en JavaScript pour présenter des concepts spécifiques au langage JavaScript.

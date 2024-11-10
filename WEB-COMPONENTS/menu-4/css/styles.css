@@ -1,0 +1,158 @@
+/* général */
+html {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/************************************** Mobile first ***************************************/
+
+/************************************** nav - début **************************************/
+nav {
+    display: flex;
+    width: 100%;
+}
+
+.nav--left {
+    justify-content: flex-start;
+}
+
+.nav--right {
+    justify-content: flex-end;
+}
+/************************************** nav - fin   **************************************/
+
+/************************************** menu - début **************************************/
+.menu {
+    display: none;
+}
+
+.menu__item {
+    padding: 6px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+/************************************** menu - fin **************************************/
+
+/************************************** menu vertical - fin **************************************/
+.vertical-nav {
+    display: none;
+    padding: 15px;
+
+    transition: 1.5s;
+}
+
+.vertical-nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.vertical-nav--active{
+    display: block;
+    position: fixed;
+    background-color: #333;
+}
+
+.left {
+    left: 0;
+    right: auto;
+}
+
+.right {
+    left: auto;
+    right: 0;
+}
+/************************************** menu vertical - fin **************************************/
+
+/************************************** icône burger - début **************************************/
+.burger {
+    display: block;
+    position: relative;
+    width: 42px;
+    padding: 5px;
+    transition: all;
+}
+
+.layer {
+    display: block;
+    width: 38px;
+    height: 4px;
+    /* border-radius: 5px; */
+    background-color: red;
+    transition: all 0.6s ease;
+}
+
+.middle { margin: 8px 0; }
+/************************************** icône burger -fin **************************************/
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    html { background-color: aquamarine; }
+
+    .burger { display: none; }
+
+    nav { display: block; }
+
+    .menu { display: flex; }
+    .menu__list { display: flex; }
+
+}
+
+
+
+
+/************************************** Différentes versions du burger - début **************************************/
+/** burger v1 **/
+
+.v1 .top    { transform: translateY(12px) rotateZ(45deg);   }
+.v1 .middle { background-color: transparent;               }
+.v1 .bottom { transform: translateY(-12px) rotateZ(-45deg); }
+
+/** burger v2 **/
+.v2 .top    { transform: translateY(12px) rotateZ(90deg);   }
+.v2 .middle { transform: scaleX(0); }
+.v2 .bottom { transform: translateY(-12px) rotateZ(0deg); }
+
+/** burger v3 **/
+.v3 .top    { transform: translateY(5px)  }
+.v3 .middle { transform: scaleX(0.1);       }
+.v3 .bottom { transform: translateY(-5px) }
+
+/** burger v4 **/
+.v4 .layer { background-color: transparent; }
+.v4 .middle::before { display: block; font-size:28px; content: '🍆'; transform: translateY(-9px);}
+
+/** burger v5 **/
+.v5 .top {}
+.v5 .middle {}
+.v5 .bottom { }
+/* .v5 .middle { transform: matrix(0.5, -0.5, 0, 0.5, 0, 1);   } */
+/* .v5 .bottom { transform: matrix(0.5, -0.5, 0, 0.5, 0, 1);   } */
+
+/* 🖕🍆 */
+
+/************************************** Différentes versions du burger - fin   **************************************/

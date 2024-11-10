@@ -1,0 +1,138 @@
+.burger {
+    display: none;
+    margin: 5px;
+}
+
+.line {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: rgba(21, 56, 212, 0.411);
+}
+
+.top {
+    margin: 0px 0;
+}
+
+.middle {
+    margin: 6px 0;
+}
+
+.bottom {
+    margin: 0px 0 0 0;
+}
+
+
+/* .vertical-menu  */
+.vertical-menu {
+    position: fixed;
+    width: 65px;
+    top: 50px;
+    bottom: 0;
+    background-color: bisque;
+    padding: 10px;
+}
+
+.vertical-menu--left--on {
+    left: 0;
+}
+
+.vertical-menu--right--on {
+    right: 0;
+}
+
+
+
+
+.horizontal-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burgrt--left {
+    left: 0;
+}
+
+.burger--right {
+    right: 0;
+}
+
+.horizontal-menu__item {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+    background-color: red;
+    transform: scale(1.7);
+}
+
+/* {
+    background-color: rgba(21, 56, 212, 0.411);
+    color: tomato;;
+} */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center ;
+
+    position: relative;
+    background-color: gray;
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color:black;
+    border-bottom: 1px solid #ccc;
+    color: white;
+}
+
+footer p {
+    display: block;
+    margin: 0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+
+    .horizontal-menu {
+        display: block;
+        position: static;
+        justify-content: start;
+    }
+
+    .horizontal-menu__list {
+        display: block;
+        position: static;
+        display: none;
+    }
+}

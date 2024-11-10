@@ -1,0 +1,20 @@
+/* #cb:checked ~ .first {
+  background-color: #2196F3;
+} */
+
+.second {
+  display: none;
+}
+
+#cb:checked ~ .second {
+    display: block;
+}
+
+.first:active {
+  background-color: #f3bb21;
+}
+
+.second:hover {
+  background-color: #f3bb21;
+}
+  

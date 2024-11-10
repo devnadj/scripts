@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav style="display: flex; align-items: center; justify-content: space-between;">
+            <img src="./img/home.svg" alt="">
+            <ul class="nav-main__items">                
+                <li class="nav-main__item"><a href="#">Contact</a></li>
+                <li class="nav-main__item"><a href="#">About</a></li>
+                <li class="nav-main__item"><a href="#">Notifications</a></li>
+                <li class="nav-main__item"><a href="#">Messages</a></li>
+                <li class="nav-main__item"><a href="#">Compte</a></li>
+                <!-- <li class="nav-main__item"><a href="/logout">Se déconnecter</a></li> -->
+                <li class="nav-main__item"><a href="#">S'incrire</a></li>
+                <li class="nav-main__item"><a href="#">Se connecter</a></li>
+            </ul>
+            <div id="burger" class="burger">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </nav>
+        <nav id="nav-modal" class="nav-modal">
+            <li class="nav-main__item"><a href="#">Home</a></li>
+            <li class="nav-main__item"><a href="#">About</a></li>
+            <li  class="nav-main__item"><a href="#">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <section class="config">
+            <div class="config-item">
+                <label for="bg-color">Background Color:</label>
+                <input type="color" id="bg-color" name="bg-color">
+            </div>
+
+            <div class="config-item">
+                <label for="text-color">Text Color:</label>
+                <input type="color" id="text-color" name="text-color">
+            </div>
+
+            <div class="config-item">
+                <label for="font-size">Font Size:</label>
+                <input type="number" id="font-size" name="font-size" min="10" max="30">
+            </div>
+            <div class="config-item">
+                <label for="menu-width">Menu width</label>
+                <input type="number" id="menu-width" name="menu-width" min="100" max="500">
+            </div>
+        </section>
+    </main>
+    <footer>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+</html>

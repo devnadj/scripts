@@ -1,0 +1,187 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu horizontal */
+.horizontal-menu {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.horizontal-menu li {
+    margin-right: 20px;
+}
+
+.horizontal-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.burger-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menu vertical */
+.vertical-menu {
+    position: fixed;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #444;
+    overflow-x: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.vertical-menu ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.vertical-menu li {
+    margin-bottom: 20px;
+}
+
+.vertical-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Boutons de mode */
+.mode-buttons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.mode-buttons button {
+    margin-right: 5px;
+}
+
+/* Responsive - Mode Réduit */
+@media (max-width: 768px) {
+    .horizontal-menu ul {
+        display: none;
+    }
+
+    .burger-icon {
+        display: block;
+        color: white;
+    }
+}
+
+/* Menu vertical visible */
+.vertical-menu.show {
+    transform: translateX(0);
+}
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu horizontal */
+.horizontal-menu {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.horizontal-menu li {
+    margin-right: 20px;
+}
+
+.horizontal-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Icône burger (menu mobile) */
+.burger-icon {
+    display: none; /* Par défaut, l'icône burger est cachée */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menu vertical */
+.vertical-menu {
+    position: fixed;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #444;
+    overflow-x: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.vertical-menu ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.vertical-menu li {
+    margin-bottom: 20px;
+}
+
+.vertical-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Boutons de mode */
+.mode-buttons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.mode-buttons button {
+    margin-right: 5px;
+}
+
+/* Responsive - Mode Réduit */
+@media (max-width: 768px) {
+    .horizontal-menu ul {
+        display: none;
+    }
+
+    .burger-icon {
+        display: block !important;
+        color: white;
+    }
+}
+
+/* Menu vertical visible */
+.vertical-menu.show {
+    transform: translateX(0);
+}

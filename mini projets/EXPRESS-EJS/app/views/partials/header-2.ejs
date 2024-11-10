@@ -1,0 +1,39 @@
+<header>
+    <nav class="header">
+        <ul class="header__icons">
+            <li>
+                <a class="header-link active" href="/"><img class="header__icon" src="/img/home.svg" alt=""></a>
+            </li>
+            <li>
+                <a class="header__icon" href="/search"><img class="header__icon" src="/img/search.svg" alt=""></a>
+            </li>
+        </ul>
+
+        <% if(session.isConnected) {%>
+        <ul class="header__icons">
+            <li class="header__item">
+                <a href="/messages"><img class="header__icon" src="/img/mail.svg" alt=""></a>
+            </li>
+            <li class="header__item">
+                <a href="/notifications"><img class="header__icon" src="/img/notifications.svg" alt=""></a>
+            </li>
+            <li class="header__item">
+                <a href="/account"><img class="header__icon" src="/img/account.svg" alt=""></a>
+                <ul class="header__sub">
+                    <li class="header__sub__item">
+                        <a href="/settings"><img class="header__icon" src="/img/settings.svg" alt="">Paramètres</a>
+                    </li>
+                    <li class="header__sub__item">
+                        <a href="/logout"><img class="header__icon" src="/img/logout.svg" alt="">Se déconnecter</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <%} else {%>
+        <ul>
+            <li><a class="header__link" href="/signup"><img class="header__icon" src="/img/signup.svg" alt=""></a></li>
+            <li><a class="header__link" href="/login"><img class="header__icon" src="/img/login.svg" alt=""></a</li>
+        </ul>
+        <%}%>
+    </nav>
+</header>

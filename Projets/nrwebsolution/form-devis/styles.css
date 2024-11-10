@@ -1,0 +1,46 @@
+form {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    font-size: 1.1rem;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    height: 70px;
+    margin-top: 10px;
+    background-color: #efefef;
+}

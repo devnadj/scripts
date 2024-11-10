@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+
+    &__icons {
+        display: flex;
+    }
+
+    &__icon {
+        padding: 0 5px;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__sub {
+        background-color: aqua;
+        color: red;
+        display: none;
+        &__item {
+            display: none;
+        }
+    }
+}

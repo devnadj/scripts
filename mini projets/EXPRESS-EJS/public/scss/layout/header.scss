@@ -1,0 +1,113 @@
+.header { // mode mobile
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &__icons { display: none; }
+
+    &__icon {
+        padding: 0 5px;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__mobile {
+        position: fixed;
+        top: 63px;
+        left: 0;
+        right: 0;
+
+        display: none;
+        background-color: #f1f1f1;
+        border-top: gray 1px solid;
+
+        &--active { display: block; }
+    }
+
+    &__item {
+        margin: 15px;
+        margin-right: 50px;
+    }
+
+    &__item img {
+        margin-right: 5px;
+    }
+
+    &__item a {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        padding: 5;
+        border-bottom: #ccc 1px solid;
+    }
+}
+
+
+/***************************************/
+/************* MENU BURGER *************/
+/***************************************/
+
+.burger { display: block; }
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.close-icon span {
+    display: block;
+    width: 5px;
+    height: 35px;
+    background-color: black;
+    margin: 0 6px;
+    }
+
+.openBtn--active { display: none; }
+
+.modal {
+    display: none;
+    &--active { 
+        display: block;
+        position: fixed;
+        width: 250px;
+        top: 51px;
+        right: 0;
+        bottom: 0;
+    
+        background-color: #f1f1f1;
+     }
+
+    a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) { // mode desktop
+    .header {
+        background-color: #f1f1f1;
+        &__icons { display: block; }
+        &__mobile { display: none; }
+    }
+    .modal { display: none; }
+    .burger { display: none; }
+    .close { display: none; }
+    .burger-icon span { display: none; }
+}

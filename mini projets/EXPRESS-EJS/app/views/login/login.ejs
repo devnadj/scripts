@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<%- include('../partials/head')%>
+<body>
+    <%- include('../partials/header')%>
+    <main>
+        <form class="frm-login" action="/login" method="POST">
+            <legend class="frm-login__title">Identification</legend>
+
+            <% if(error !=='') { %>
+                <p class="frm-login__error"><%= error %></p>
+            <% } %>
+
+            <label class="frm-login__label" for="email">Email</label>
+            <input class="frm-login__input" id="email" type="text" name="email" required>
+            
+            <label class="frm-login__label" for="password">Mot de passe</label>
+            <input class="frm-login__input" id="password" type="password" name="password" required>
+
+            <button class="frm-login__button">Se connecter</button>
+            <a class="frm-login__link" href="/forgot-password">Mot de passe oublié</a>
+        </form>
+   </main>
+    <%- include('../partials/footer')%>
+</body>
+</html>

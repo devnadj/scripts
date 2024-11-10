@@ -1,0 +1,43 @@
+html {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.b2 {
+    display: block;
+    position: fixed;
+    top: 500px;
+}
+
+.b2--left {
+    left: 10px;
+    right: auto;
+    background-color: blue;
+}
+
+.b2--right {
+    right: 10px;
+    left: auto;
+    background-color: red;
+}
+
+.vertical {
+
+}
+
+.horizontal {
+
+}

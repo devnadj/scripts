@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Formulaire d'audit</h2>
+        
+        <label for="name">Nom & Prénom</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="enterprise">Entreprise</label>
+        <input type="text" name="enterprise" id="enterprise">
+
+        <h3>Points à auditer</h3>
+
+        <div class="audit-box">
+            <div class="audit-checkboxes">
+                <div class="audit-element">
+                    <label for="accessibility">Accessibilité</label>
+                    <input type="checkbox" name="accessibility" id="accessibility">
+                    <button type="button" onmouseover="showExplanation('accessibility')">?</button>
+                </div>
+
+                <div class="audit-element">
+                    <label for="security">Sécurité des données</label>
+                    <input type="checkbox" name="security" id="security">
+                    <button type="button" onmouseover="showExplanation('dataSecurity')">?</button>
+                </div>
+
+                <div class="audit-element">
+                    <label for="grpd">Respect du RGPD</label>
+                    <input type="checkbox" name="grpd" id="grpd">
+                    <button type="button" onmouseover="showExplanation('gdprCompliance')">?</button>
+                </div>
+
+                <div class="audit-element">
+                    <label for="seo">SEO</label>
+                    <input type="checkbox" name="seo" id="seo">
+                    <button type="button" onmouseover="showExplanation('seo')">?</button>
+                </div>
+
+                <div class="audit-element">
+                    <label for="graphic">Charte Graphique</label>
+                    <input type="checkbox" name="graphic" id="graphic">
+                    <button type="button" onmouseover="showExplanation('graphicCharter')">?</button>
+                </div>
+            </div>
+            <div class="explanation" id="explanationBox">
+                <p>Survolez un point à auditer pour afficher une explication.</p>
+            </div>
+        </div>
+    </form>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        h3 {
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .audit-box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .audit-checkboxes {
+            width: 60%;
+        }
+
+        .audit-element {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .audit-element input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .audit-element button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .audit-element button:hover {
+            background-color: #0056b3;
+        }
+
+        .explanation {
+            width: 35%;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            color: #555;
+            font-size: 0.9em;
+            height: auto;
+            overflow: auto;
+        }
+
+        .explanation p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .audit-element {
+            display: grid;
+            grid-template-columns: 6fr 1fr 1fr;
+        }
+    </style>
+    <script>
+        const auditDescriptions = {
+            accessibility: "L'accessibilité web vise à rendre votre site utilisable par tous, y compris les personnes en situation de handicap. Un audit d'accessibilité permet d'identifier les obstacles qui pourraient empêcher certains utilisateurs d'accéder à vos contenus et services, tout en respectant les normes légales en vigueur.",
+            dataSecurity: "La sécurité des données est cruciale pour protéger les informations sensibles des utilisateurs. Cet audit évalue les vulnérabilités potentielles de votre site et propose des recommandations pour garantir la confidentialité, l'intégrité et la disponibilité de vos données.",
+            gdprCompliance: "Le Règlement Général sur la Protection des Données (RGPD) impose des obligations strictes en matière de traitement des données personnelles. Cet audit vérifie la conformité de votre site avec les exigences du RGPD, afin de protéger les droits des utilisateurs et d'éviter les sanctions.",
+            seo: "L'optimisation SEO permet d'améliorer la visibilité de votre site sur les moteurs de recherche comme Google. Un audit SEO identifie les éléments à optimiser pour augmenter votre classement dans les résultats de recherche et attirer plus de visiteurs qualifiés.",
+            graphicCharter: "La charte graphique garantit la cohérence visuelle et l'identité de votre marque sur votre site. Cet audit évalue la mise en œuvre de votre charte graphique, afin d'assurer une expérience utilisateur agréable et une image professionnelle de votre entreprise."
+        };
+
+        function showExplanation(type) {
+            const explanationBox = document.getElementById('explanationBox');
+            explanationBox.innerHTML = `<p>${auditDescriptions[type]}</p>`;
+        }
+    </script>
+</body>
+</html>

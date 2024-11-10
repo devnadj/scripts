@@ -1,0 +1,143 @@
+@use './vendor/reset.scss';
+@use './components/account-card.scss';
+@use './layout/header.scss';
+@use './layout/footer.scss';
+@use './components/frm-login.scss';
+@use './components/frm-signup.scss';
+@use './components/frm-password.scss';
+@use './components/frm-forgot-password.scss';
+@use './components/menu.scss';
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    // display: flex;
+    // flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+// footer {
+//     display: flex;
+//     justify-content: space-between;
+    
+//     background-color: #f1f1f1;
+//     padding: 10px;
+//     font-size: 20px;
+//     text-align: center;
+// }
+
+main {
+    background-color: royalblue;
+    padding: 125px 50px 50px;
+    flex-grow: 1;
+}
+
+main p {
+    // color: #fff;
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 1rem auto;
+}
+
+main h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0rem auto 1.5rem auto;
+}
+
+@media screen and (max-width: 768px){
+    .frm-password {
+        // width: 50%;
+        background-color: red;
+    }
+
+    // main {
+    //     // padding: 0px;
+    // }
+}
+
+
+
+// form {
+//     display: inline-block;
+// }
+
+// body {
+//     background-color: #746e6e;
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     margin: 0;
+//     padding: 0;
+//     height: 100vh;
+//     width: 100%;
+// }
+
+// .header {
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+
+//     display: flex;
+//     background-color: #222;
+//     text-align:left;
+//     padding: 1.2rem 1rem;
+//     align-items: center;
+//     width: 100%;
+// }
+
+// .footer {
+//     position: fixed;
+//     right: 0;
+//     left: 0;
+//     bottom: 0;
+
+//     background-color: #222;
+//     text-align: center;
+//     padding: 5rem 1rem;
+//     width: 100%;
+// }
+
+// .container { display: flex; justify-content: center;}
+
+
+// .header-link { color: #ffffffb3; margin: 0 0.25rem; padding: 0.5rem; display: inline-block; }
+// .footer-link { color: #ffffffb3; margin: 0 0.25rem; padding: 0.5rem; display: inline-block;}
+
+
+// @media screen and (max-width: 800px) {
+
+//     .header {
+//         display: flex;
+//         flex-direction: column;
+//         background-color: blue;
+//     }
+//     .footer {
+//         background-color: red;
+//         padding: 3rem .5rem;
+//     }
+// }
+
+// form {
+//     z-index: 1;
+// }

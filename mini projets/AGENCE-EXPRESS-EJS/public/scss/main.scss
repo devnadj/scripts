@@ -1,0 +1,26 @@
+@use './vendor/reset.scss';
+@use './components/account-card.scss';
+@use './layout/header.scss';
+@use './layout/footer.scss';
+@use './components/frm-login.scss';
+@use './components/frm-signup.scss';
+@use './components/frm-password.scss';
+@use './components/frm-forgot-password.scss';
+@use './components/menu.scss';
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}

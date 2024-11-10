@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <%- include('../partials/head')%>
+<body>
+    <%- include('../partials/header')%>
+    <main>
+        <form action="/signup" method="post" class="frm-signup">
+            <legend class="frm-signup__title">Inscription</legend>
+            <label class="frm-signup__label" for="firstname">Prénom</label>
+            <input
+                class="frm-signup__input <%= errors.includes('firstname') ? 'frm-signup__input--error' : '' %>"
+                type="text" name="firstname" id="firstname"
+                value="<%=values.firstname%>"
+            >
+            <p class="frm-signup__p <%= errors.includes('firstname') ? 'frm-signup__p--error' : '' %>">le nom doit faire entre 2 et 50 caractères</p>
+
+            <label class="frm-signup__label" for="lastname">Nom</label>
+            <input
+                class="frm-signup__input <%= errors.includes('lastname') ? 'frm-signup__input--error' : '' %>"
+                type="text" name="lastname" id="lastname"
+                value="<%=values.lastname%>"
+            >
+            <p class="frm-signup__p <%= errors.includes('lastname') ? 'frm-signup__p--error' : '' %>">le prénom doit faire entre 2 et 50 caractères</p>
+
+            <label class="frm-signup__label" for="email">Email</label>
+            <input class="frm-signup__input <%= errors.includes('email') ? 'frm-signup__input--error' : '' %>"
+                type="email" name="email" id="email"
+                value="<%= values.email%>"
+            >
+            <p class="frm-signup__p <%= errors.includes('email error') ? 'frm-signup__p--error' : '' %> ">
+                Attention: email non valide
+            </p>
+            <p class="frm-signup__p <%= errors.includes('email already used') ? 'frm-signup__p--error' : '' %>">Attention: cet email est déjà utilisé</p>
+
+            <label class="frm-signup__label" for="phone">Téléphone</label>
+            <input
+                class="frm-signup__input <%= errors.includes('phone') ? 'frm-signup__input--error' : '' %>"
+                type="tel" name="phone" id="phone"
+                value="<%= values.phone %>"
+            >
+            <label class="frm-signup__label" for="address">Adresse</label>
+            <input class="frm-signup__input <%= errors.includes('address') ? 'frm-signup__input--error' : '' %>"
+                type="text" name="address" id="address"
+                value="<%= values.address %>"
+            >
+            <label class="frm-signup__label" for="cp">Code Postal</label>
+            <input class="frm-signup__input <%= errors.includes('cp') ? 'frm-signup__input--error' : '' %>"
+                type="text" name="cp" id="cp"
+                value="<%= values.cp %>"
+            >
+            <label class="frm-signup__label" for="city">Ville</label>
+            <input class="frm-signup__input <%= errors.includes('city') ? 'frm-signup__input--error' : '' %>"
+                type="text" name="city" id="city"
+                value="<%= values.city %>"
+            >
+            <label class="frm-signup__label" for="password">Mot de passe</label>
+            <input class="frm-signup__input <%= errors.includes('password') ? 'frm-signup__input--error' : '' %>"
+                type="password" name="password" id="city"
+                value="<%= values.password %>"
+            >
+            <button class="frm-signup__button">Valider</button>
+        </form>
+    </main>
+    <%- include('../partials/footer')%>
+</body>
+</html>

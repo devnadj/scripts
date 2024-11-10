@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.woff?eu0ody') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-moon:before {
+    content: "\e904";
+}
+
+.icon-star:before {
+    content: "\e905";
+}
+
+.icon-sun:before {
+    content: "\e906";
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+.theme-dark {
+    color: white;
+    background-color: black;
+    --border-normal: 1px solid rgba(255, 255, 255, .2);
+    --color-bg: black;
+    --color-opacity: rgba(255, 255, 255, .1);
+}
+
+.theme-dark #theme-switch .icon-moon::before {
+    content: "\e906";
+}
+
+.btn {
+    background-color: var(--color-main);
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    padding: 0.5rem;
+    display: inline-block;
+  
+}
+
+.btn:hover, .btn:focus {
+    background-color:#296;
+    color: white;
+}

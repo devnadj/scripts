@@ -1,0 +1,23 @@
+Les textes
+----------
+
+Un texte peut être annoté plusieurs fois
+
+
+
+Annotation générale d'un document
+---------------------------------
+ - Déterminer la nature du texte
+ - Déterminer la langue du texte
+ - Déterminer les parties du texte
+   - Déterminer les paragraphes, les titres, les légendes
+   - Déterminer les blocs de code
+   - Déterminer les commandes
+
+Annotation interne
+------------------
+ - Déterminer pour chaque mot la classe grammaticale
+ - Déterminer les blocs
+   - Blocs de code
+     - Déterminer le langage
+     - 

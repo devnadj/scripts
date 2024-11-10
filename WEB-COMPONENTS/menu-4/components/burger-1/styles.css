@@ -1,0 +1,3 @@
+.v1 .top    { transform: translateY(12px) rotateZ(45deg);   }
+.v1 .middle { background-color: transparent;               }
+.v1 .bottom { transform: translateY(-12px) rotateZ(-45deg); }

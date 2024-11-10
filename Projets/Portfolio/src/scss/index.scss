@@ -1,0 +1,22 @@
+/*@use 'reset-css/sass/reset';*/
+@use '../../node_modules/reset-css/sass/reset';
+
+@use './global.scss';
+@use './components/segment.scss';
+@use './components/btn.scss';
+@use './fonts';
+
+/*
+@use './components/account.scss';
+@use './components/admin.scss';
+@use './components/card.scss';
+@use './components/content.scss';
+@use './components/detail.scss';
+@use './components/footer.scss';
+@use './components/form.scss';
+@use './components/header.scss';
+@use './components/logo.scss';
+@use './components/menu.scss';
+@use './components/messages.scss';
+@use './components/search.scss';
+*/

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="horizontal-nav">
+            <ul class="horizontal-nav--items">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">À propos</a></li>
+            </ul>
+            <div class="burger-button">
+                <span class="burger top"></span>
+                <span class="burger middle"></span>
+                <span class="burger bottom"></span>
+            </div>
+            <div class="b2 b2--left">
+                <span class="burger top"></span>
+                <span class="burger middle"></span>
+                <span class="burger bottom"></span>
+            </div>
+        </nav>
+        <form action="">
+            <div class="position">
+                <p>Position</p>
+                <label for="left">Gauche</label>
+                <input type="radio" name="position" id="left" checked>
+                <input type="radio" name="position" id="right">
+                <label for="right">Droite</label>
+            </div>
+            <div>
+                <p>Transition</p>
+                <input type="number" name="transition" id="transition" min="100" max="1000" step="10" value="100">
+                <label for="transition">ms</label>
+            </div>
+            <div>
+                <p>Largeur</p>
+                <input type="number" name="width" id="width" min="0" max="500" step="1" value="120">
+                <label for="width">px</label>
+            </div>
+            <div>
+                <p>Couleur du menu</p>
+                <!-- <label for="color">Couleur</label> -->
+                <input type="color" name="color" id="color" value="#000000">
+            </div>
+            <div>
+                <p>Type de burger</p>
+                <label for="type">Choisissez le burger</label>
+                <select name="type" id="type">
+                    <option value="1">Type 1</option>
+                    <option value="2">Type 2</option>
+                    <option value="3">Type 3</option>
+                </select>
+            </div>
+            <div>
+                <p>Direction <span style="padding: 3px; border: 1px solid; display: inline-block;" class="help-btn">?</span></p>
+                <div></div>
+                <label for="horizontal">Horizontal</label>
+                <input type="radio" name="direction" value="horizontal" checked id="horizontal">
+                <input type="radio" name="direction" value="vertical" id="vertical">
+                <label for="vertical">Vertical</label>
+            </div>
+            <!-- <button>Valider</button> -->
+        </form>
+        <nav class="vertical-nav">
+            <ul>
+                <li><a  class="v-item" href="#">Accueil</a></li>
+                <li><a  class="v-item" href="#">Services</a></li>
+                <li><a  class="v-item" href="#">Contact</a></li>
+                <li><a  class="v-item" href="#">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <p>© 2020 - Tous droits réservés</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

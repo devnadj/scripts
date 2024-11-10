@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<body>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+    root, * {
+        font-size: 20px;
+    }
+
+    body {
+        background-color: gray;
+    }
+
+    button {
+        background-color: greay;
+        color: blue;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        justify-items: center;
+        width: 163px;
+    }
+
+    i {
+        color: blue;
+        text-align: center;
+        margin-right: 3px;
+    }
+
+    .title-wrapper {
+        color: red;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+</style>
+<section>
+    <div>
+        <button class="elementor-panel-heading">Basic</button>
+        <div class="elementor-panel-category-items elementor-responsive-panel" style="">
+            <div class="elementor-element-wrapper">
+                <button class="elementor-element" draggable="true">
+                    <div class="icon">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                    </div>
+                    <div class="title-wrapper">
+                        <div class="title">Heading</div>
+                    </div>
+                </button>
+            </div>
+            <div class="elementor-element-wrapper">
+                <button class="elementor-element" draggable="true">
+                    <div class="icon">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                    </div>
+                    <div class="title-wrapper">
+                        <div class="title">Image</div>
+                    </div>
+                </button>
+            </div>
+            <div class="elementor-element-wrapper">
+                <button class="elementor-element" draggable="true">
+                    <div class="icon">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                    </div>
+                    <div class="title-wrapper">
+                        <div class="title">Text Editor</div>
+                    </div>
+                </button>
+            </div>
+            <div class="elementor-element-wrapper">
+                <button class="elementor-element" draggable="true">
+                    <div class="icon">
+                        <i class="fas fa-home" aria-hidden="true">
+                        </i>
+                    </div>
+                    <div class="title-wrapper">
+                        <div class="title">Video</div>
+                    </div>
+                </button>
+            </div>
+            <div class="elementor-element-wrapper">
+                <button class="elementor-element" draggable="true">
+                    <div class="icon">
+                        <i class="fas fa-home" aria-hidden="true">
+                        </i>
+                    </div>
+                    <div class="title-wrapper">
+                        <div class="title">Button</div>
+                    </div>
+                </button>
+            </div>
+            <div class="elementor-element-wrapper">
+                <button class="elementor-element" draggable="true">
+                    <div class="icon">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                    </div>
+                    <div class="title-wrapper">
+                        <div class="title">Divider</div>
+                    </div>
+                </button>
+            </div>
+            <div class="elementor-element-wrapper">
+                <button class="elementor-element" draggable="true">
+                    <div class="icon">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                    </div>
+                    <div class="title-wrapper">
+                        <div class="title">
+                            Spacer
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="elementor-element-wrapper">
+                <button class="elementor-element" draggable="true">
+                    <div class="icon">
+                        <i class="eicon-google-maps fas fa-home" aria-hidden="true"></i>
+                    </div>
+                    <div class="title-wrapper">
+                        <div class="title">Google Maps</div>
+                    </div>
+                </button>
+            </div>
+            <div class="elementor-element-wrapper">
+                <button class="elementor-element" draggable="true">
+                    <div class="icon">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                    </div>
+                    <div class="title-wrapper">
+                        <div class="title">Icon</div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: red;">
+        <p>rototdrzerzfsdfqj hsdkhf sdkf hqsdk hsdk fhsdkjfh sdkfhsdfk hsdfkqsdhfkqsdhfksqdfhk sdhf</p>
+    </div>
+</section>
+<script>
+    const button = document.querySelector('.elementor-panel-heading');// Your JavaScript code here
+    console.log(button);
+    button.addEventListener('click', function() {
+        console.log('clicked');
+        const panel = document.querySelector('.elementor-panel-category-items');
+        panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+    });
+</script>
+</body>

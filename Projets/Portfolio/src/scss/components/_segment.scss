@@ -1,0 +1,26 @@
+.segment {
+    &--hide {
+        display: none;
+    }
+}
+
+
+
+.divers {
+    &--hide {
+      display: none;
+    }
+    
+}
+
+.experience {
+    background-color: peru;
+}
+
+.formation {
+    background-color: aqua;
+}
+
+.divers {
+    background-color: beige;
+}

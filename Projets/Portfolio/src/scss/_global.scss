@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --color-main: #4b8;
+    --color-alt: #296;
+    --border-normal: 1px solid rgba(0, 0, 0, .2);
+    --color-bg: white;
+    --color-opacity: rgba(0, 0, 0, .1);
+  }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.theme-dark {
+    color: white;
+    background-color: black;
+    --border-normal: 1px solid rgba(255, 255, 255, .2);
+    --color-bg: black;
+    --color-opacity: rgba(255, 255, 255, .1);
+}
+
+.theme-dark #theme-switch .icon-moon::before {
+    content: "\e906";
+}
+
+
+
+
+
+
+
+
+
+@keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(-2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}

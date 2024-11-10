@@ -1,0 +1,72 @@
+/* Style de base pour centrer la fenêtre */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: Arial, sans-serif;
+}
+
+/* Fenêtre de type Windows */
+.fake-windows-window {
+  width: 600px;
+  height: 400px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* Barre de titre de la fenêtre */
+.window-title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #0078d7;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Titre de la fenêtre */
+.window-title {
+  margin-left: 10px;
+}
+
+/* Boutons de contrôle */
+.window-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.control {
+  font-size: 1em;
+  line-height: 1;
+  color: #fff;
+  cursor: default;
+  padding: 0 6px;
+  text-align: center;
+}
+
+.close {
+  font-size: 1em; /* Augmente la taille de la croix */
+  padding: 0 8px; /* Augmente légèrement l'espace autour */
+}
+
+.control:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+/* Zone de contenu */
+.window-content {
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #f8f8f8;
+  overflow-y: auto;
+}

@@ -1,0 +1,190 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --color-main: #4b8;
+  --color-alt: #296;
+  --border-normal: 1px solid #0003;
+  --color-bg: white;
+  --color-opacity: #0000001a;
+}
+
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.theme-dark {
+  color: #fff;
+  --border-normal: 1px solid #fff3;
+  --color-bg: black;
+  --color-opacity: #ffffff1a;
+  background-color: #000;
+}
+
+.theme-dark #theme-switch .icon-moon:before {
+  content: "";
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.segment--hide, .divers--hide {
+  display: none;
+}
+
+.experience {
+  background-color: peru;
+}
+
+.formation {
+  background-color: #0ff;
+}
+
+.divers {
+  background-color: beige;
+}
+
+.btn {
+  background-color: var(--color-main);
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  padding: .5rem;
+  display: inline-block;
+}
+
+.btn:hover, .btn:focus {
+  background-color: var(--color-alt);
+  color: #fff;
+}
+
+@font-face {
+  font-family: Noto Sans;
+  src: url("NotoSans.5aec917f.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Noto Sans;
+  src: url("NotoSans-Bold.3074013b.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Noto Sans;
+  src: url("NotoSans-Italic.29953c38.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: icomoon;
+  src: url("icomoon.1d1f516a.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  speak: never;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-family: icomoon !important;
+}
+
+.icon-check-circle:before {
+  content: "";
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-mail:before {
+  content: "";
+}
+
+.icon-map-pin:before {
+  content: "";
+}
+
+.icon-moon:before {
+  content: "";
+}
+
+.icon-star:before {
+  content: "";
+}
+
+.icon-sun:before {
+  content: "";
+}
+
+/*# sourceMappingURL=index.da533f7e.css.map */

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<%- include('../partials/head')%>
+<body>
+    <%- include('../partials/header')%>
+    <main>
+        <form class="frm-forgot-password" action="/forgot-password" method="POST">
+            <legend class="frm-forgot-password__title">Récupérez votre mot de passe</legend>
+
+            <!-- <label class="frm-forgot-password__label" for="email">Email</label> -->
+            <input
+                class="frm-forgot-password__input"
+                type="text" name="email"
+                placeholder="email"
+            >
+            
+            <button class="frm-forgot-password__cancel" onclick="window.history.back();">Annuler</button>
+            <button class="frm-forgot-password__button">Envoyer</button>
+        </form>
+   </main>
+    <%- include('../partials/footer')%>
+</body>
+</html>

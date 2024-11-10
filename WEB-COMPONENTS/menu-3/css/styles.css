@@ -1,0 +1,61 @@
+html {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+ul {
+    overflow: hidden;
+}
+
+.v-item {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: bold;
+    margin: 10px;
+    padding: 10px;
+}
+
+.burger {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+}
+
+.burger-button {
+    position: fixed;
+    /* left: 10px; */
+    right: 10px;
+    top: 10px;
+}
+
+.middle {
+    margin: 6px 0;
+}
+
+.horizontal-nav--items {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.vertical-nav {
+    box-sizing: border-box;
+    transition: 1.2s;
+}

@@ -1,0 +1,53 @@
+<header>
+    <nav class="header">
+        <!-- le logo -->
+        <a class="header-link active" href="/"><img class="header__icon" src="/img/home.svg" alt=""></a>
+
+        <div class="header__icons">
+            <a href="/search"><img class="header__icon" src="/img/search.svg" alt=""></a>
+            <% if(session.isConnected) { %>
+                <!-- <a href="/notifications"><img class="header__icon" src="/img/notification.svg" alt=""></a>
+                <a href="/messages"><img class="header__icon" src="/img/mail.svg" alt=""></a>
+                <a href="/account"><img class="header__icon" src="/img/account.svg" alt=""></a>
+                <a href="/logout"><img class="header__icon" src="/img/logout.svg" alt=""></a> -->
+                
+                <a href="/notifications">Notifications</a>
+                <a href="/messages">Messages</a>
+                <a href="/account">Compte</a>
+                <a href="/logout">Se déconnecter</a>
+            <% } else { %>
+                <!-- <a href="/login"><img class="header__icon" src="/img/login.svg" alt=""></a> -->
+
+                <a href="/signup">S'incrire</a>
+                <a href="/login">Se connecter</a>
+                <a href="/signup"><img class="header__icon" src="/img/signup.svg" alt=""></a>
+            <% } %>
+        </div>
+        <!-- le burger -->
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+        </a>
+    </nav>
+
+
+    <nav class="modal">
+        <ul>
+            <li class="modal__item"><a href="/search">Rechercher</a></li>
+            <% if (session.isConnected) {%>
+                <li class="modal__item"><a href="/notifications">Notifications</a></li>
+                <li class="modal__item"><a href="/messages">Messages</a></li>
+                <li class="modal__item"><a href="/account">Mon Compte</a></li>
+                <li class="modal__item"><a href="/logout">Déconnexion</a></li>
+            <% } else { %>
+                <li class="modal__item"><a href="/signup">S'inscrire</a></li>
+                <li class="modal__item"><a href="/login">Se connecter</a></li>
+            <% } %>
+
+
+        </ul>
+    </nav>
+</header>

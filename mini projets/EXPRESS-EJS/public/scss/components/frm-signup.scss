@@ -1,0 +1,53 @@
+.frm-signup {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid;
+    padding: 0.75rem;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    width: 100%;
+
+    &__label, &__input, &__button {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    &__title {
+        grid-column: 1 / 3;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: #000;
+        padding-bottom: 20px;
+    }
+
+    &__label {
+        grid-column: 1 / 2;
+    }
+
+    &__input, &__button {
+        grid-column: 2 / 3;
+    }
+
+    &__input {
+        &--error {
+            border-color: red;
+        }
+    }
+
+    &__error {
+        border-color: red;
+    }
+
+    &__p {
+        display: none;
+        &--error {
+            display: block;
+            grid-column: 2 / 3;
+            text-align: left;
+            color: red;
+            margin: 5px;
+            padding: 5px;
+        }
+    }
+}

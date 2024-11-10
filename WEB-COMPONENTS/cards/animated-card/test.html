@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/test.css">
+</head>
+<body>
+    
+    <div class="card">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+    </div>
+    <style>
+        .card {
+            display: block;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: azure;
+            margin: 10px;
+        }
+
+        .one {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 50px;
+            height: 50px;
+            background-color: red;
+
+            z-index: 2;
+        }
+
+        .two {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            width: 50px;
+            height: 50px;
+            background-color: green;
+        }
+
+        .three {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+
+        .four {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        .five {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 250px;
+            height: 250px;
+            background-color: black;
+
+            z-index: 1;
+        }
+        
+    </style>
+</body>
+</html>

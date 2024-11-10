@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="editor">
+        <h1>Edit Counter</h1>
+        <div class="content">
+            <div class="counter">
+                <label for="start-number">Starting Number</label>
+                <input type="number" id="start-number" value="0">
+                
+                <label for="end-number">Ending Number</label>
+                <input type="number" id="end-number" value="100">
+                
+                <label for="prefix">Number Prefix</label>
+                <input type="text" id="prefix">
+                
+                <label for="suffix">Number Suffix</label>
+                <input type="text" id="suffix">
+                
+                <label for="duration">Animation Duration (ms)</label>
+                <input type="number" id="duration" value="2000">
+                
+                <label for="separator">Thousand Separator</label>
+                <input type="checkbox" id="separator" checked>
+                
+                <label for="separator-type">Separator</label>
+                <select id="separator-type">
+                    <option value="default">Default</option>
+                    <option value="comma">Comma</option>
+                    <option value="dot">Dot</option>
+                    <option value="space">Space</option>
+                </select>
+                
+                <label for="title">Title</label>
+                <input type="text" id="title" value="Cool Number">
+                
+                <label for="title-tag">Title HTML Tag</label>
+                <select id="title-tag">
+                    <option value="div">div</option>
+                    <option value="h1">h1</option>
+                    <option value="h2">h2</option>
+                    <option value="h3">h3</option>
+                </select>
+                
+                <button id="start-counter">Start Counter</button>
+            </div>
+            <div id="counter-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

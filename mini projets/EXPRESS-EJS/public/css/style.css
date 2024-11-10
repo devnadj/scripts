@@ -1,0 +1,394 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.account-card {
+  border: 1px solid;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}
+.account-card__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.account-card__info {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.account-card__line {
+  display: flex;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header__icons {
+  display: none;
+}
+.header__icon {
+  padding: 0 5px;
+  width: 40px;
+  height: 40px;
+}
+.header__mobile {
+  position: fixed;
+  top: 63px;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: #f1f1f1;
+  border-top: gray 1px solid;
+}
+.header__mobile--active {
+  display: block;
+}
+.header__item {
+  margin: 15px;
+  margin-right: 50px;
+}
+.header__item img {
+  margin-right: 5px;
+}
+.header__item a {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  padding: 5;
+  border-bottom: #ccc 1px solid;
+}
+
+/***************************************/
+/************* MENU BURGER *************/
+/***************************************/
+.burger {
+  display: block;
+}
+
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.close-icon span {
+  display: block;
+  width: 5px;
+  height: 35px;
+  background-color: black;
+  margin: 0 6px;
+}
+
+.openBtn--active {
+  display: none;
+}
+
+.modal {
+  display: none;
+}
+.modal--active {
+  display: block;
+  position: fixed;
+  width: 250px;
+  top: 51px;
+  right: 0;
+  bottom: 0;
+  background-color: #f1f1f1;
+}
+.modal a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: #f1f1f1;
+  }
+  .header__icons {
+    display: block;
+  }
+  .header__mobile {
+    display: none;
+  }
+  .modal {
+    display: none;
+  }
+  .burger {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+  .burger-icon span {
+    display: none;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.frm-login {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.frm-login__error {
+  grid-column: 2/3;
+  color: red;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+.frm-login__label, .frm-login__input, .frm-login__button {
+  margin: 5px;
+  padding: 5px;
+}
+.frm-login__title {
+  grid-column: 1/3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+.frm-login__label {
+  grid-column: 1/2;
+}
+.frm-login__input, .frm-login__button {
+  grid-column: 2/3;
+}
+.frm-login__link {
+  grid-column: 2/3;
+  text-align: left;
+  padding-top: 20px;
+  color: #163860;
+  font-size: 0.75rem;
+  line-height: 1.3333333333;
+}
+
+.frm-signup {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.frm-signup__label, .frm-signup__input, .frm-signup__button {
+  margin: 5px;
+  padding: 5px;
+}
+.frm-signup__title {
+  grid-column: 1/3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  padding-bottom: 20px;
+}
+.frm-signup__label {
+  grid-column: 1/2;
+}
+.frm-signup__input, .frm-signup__button {
+  grid-column: 2/3;
+}
+.frm-signup__input--error {
+  border-color: red;
+}
+.frm-signup__error {
+  border-color: red;
+}
+.frm-signup__p {
+  display: none;
+}
+.frm-signup__p--error {
+  display: block;
+  grid-column: 2/3;
+  text-align: left;
+  color: red;
+  margin: 5px;
+  padding: 5px;
+}
+
+.frm-password {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  margin: auto;
+}
+.frm-password__label, .frm-password__input, .frm-password__button {
+  margin: 5px;
+  padding: 5px;
+}
+.frm-password__title {
+  grid-column: 1/3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  padding-bottom: 20px;
+}
+.frm-password__label {
+  grid-column: 1/2;
+}
+.frm-password__input, .frm-password__button {
+  grid-column: 2/3;
+}
+.frm-password__input--error {
+  border-color: red;
+}
+.frm-password__error {
+  border-color: red;
+}
+.frm-password__p {
+  display: none;
+}
+.frm-password__p--error {
+  display: block;
+  grid-column: 2/3;
+  text-align: left;
+  color: red;
+  margin: 5px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .frm-password {
+    background-color: red;
+  }
+}
+.frm-forgot-password {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.frm-forgot-password__label, .frm-forgot-password__input, .frm-forgot-password__button, .frm-forgot-password__cancel {
+  margin: 5px;
+  padding: 5px;
+}
+.frm-forgot-password__title {
+  grid-column: 1/3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  padding-bottom: 20px;
+}
+.frm-forgot-password__input {
+  grid-column: 1/3;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  background-color: royalblue;
+  padding: 125px 50px 50px;
+  flex-grow: 1;
+}
+
+main p {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin: 1rem auto;
+}
+
+main h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0rem auto 1.5rem auto;
+}
+
+@media screen and (max-width: 768px) {
+  .frm-password {
+    background-color: red;
+  }
+}

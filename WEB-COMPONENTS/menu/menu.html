@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/test.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/menu.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/menu-config.css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="horizontal-menu" class="horizontal-menu">
+            <div id="burger" class="burger right">
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+            </div>
+
+            <ul class="horizontal-menu__list">
+                <li class="horizontal-menu__item"><a href="#" class="horizontal-menu__link">Home</a></li>
+                <li class="horizontal-menu__item"><a href="#" class="horizontal-menu__link">About</a></li>
+                <li class="horizontal-menu__item"><a href="#" class="horizontal-menu__link">Services</a></li>
+                <li class="horizontal-menu__item"><a href="#" class="horizontal-menu__link">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="vertical-menu" class="vertical-menu">
+            <ul class="vertical-menu__liste">
+                <li class="vertical-menu__item"><a href="#" class="vertical-menu__link">Home</a></li>
+                <li class="vertical-menu__item"><a href="#" class="vertical-menu__link">About</a></li>
+                <li class="vertical-menu__item"><a href="#" class="vertical-menu__link">Services</a></li>
+                <li class="vertical-menu__item"><a href="#" class="vertical-menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <label for="position-left">Gauche</label>
+        <input type="radio" name="position" value="left" id="position-left" class="position-left">
+        <br>
+        <label for="position-right">Droite</label>
+        <input type="radio" name="position" value="right" id="position-right" class="position-right">
+    </main>
+
+    <footer style="position: fixed; bottom: 0; left: 0; right: 0; background-color: black; color: aliceblue; text-align: center;">
+        <p>&copy; 2020 - All rights reserved</p>
+    </footer>
+    <!-- <script type="module" src="./js/menu-config.js"></script> -->
+    <script src="./js/menu.js"></script>
+</body>
+</html>

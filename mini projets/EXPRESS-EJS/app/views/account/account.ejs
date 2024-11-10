@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<%- include('../partials/head')%>
+<body>
+    <%- include('../partials/header')%>
+    <main>
+        <article class="account-card">
+            <h1 class="account-card__title">Votre Compte</h1>
+            <p>
+                <div class="account-card__line"><img src="/img/person.svg" alt="">  <span class="account-card__info"><%=session.user.firstname %> <%=session.user.lastname %><br></span></div>
+                <div class="account-card__line"><img src="/img/home.svg" alt="">  <span class="account-card__info"><%=session.user.address %><br></span></div>
+                <div class="account-card__line"><img src="/img/city.svg" alt="">  <span class="account-card__info"><%=session.user.cp %> - <%=session.user.city %><br></span></div>
+                <div class="account-card__line"><img src="/img/smartphone.svg" alt="">  <span class="account-card__info"><%=session.user.phone %><br></span></div>
+                <span class="account-card__info"><%=session.user.username %></span>
+                <div class="account-card__line"><img src="/img/mail.svg" alt="">  <span class="account-card__info"><%=session.user.email %><br></span></div>
+            </p>
+        </article>
+   </main>
+    <%- include('../partials/footer')%>
+</body>
+</html>

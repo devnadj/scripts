@@ -1,0 +1,74 @@
+/* Style de base pour centrer la fenêtre */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Fenêtre du navigateur */
+.fake-browser-window {
+  width: 80%;
+  max-width: 900px;
+  height: 70%;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+/* Barre de titre de la fenêtre */
+.browser-title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #e1e1e1;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Boutons de contrôle */
+.browser-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: default;
+}
+
+/* Style des boutons : fermer, agrandir, minimiser */
+.control.close {
+  background-color: #ff5f56;
+}
+.control.maximize {
+  background-color: #ffbd2e;
+}
+.control.minimize {
+  background-color: #27c93f;
+}
+
+/* Titre de la fenêtre */
+.browser-title {
+  flex-grow: 1;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* Zone de contenu */
+.browser-content {
+  padding: 20px;
+  overflow-y: auto;
+}

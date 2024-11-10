@@ -1,0 +1,15 @@
+Un livre peut appartenir à plusieurs catégorie
+# informatique
+# mathématiques
+# 
+
+# formulaire de recherche
+
+
+Livre
+ - titre
+ - sous-titre
+ - auteurs
+ - catégories
+ - isbn 10 / 13
+ 

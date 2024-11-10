@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fixed-sidebar {
+          position: fixed;
+          left: 0;
+          bottom: 20%;
+          width: 210px;
+          background-color: #ffffff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          z-index: 1000;
+        }  
+      
+        .fixed-sidebar h3 {
+          margin-bottom: 10px;
+          font-size: 20px;
+        }
+      
+        .fixed-sidebar h4 {
+          margin-bottom: 10px;
+        }
+          
+        .fixed-sidebar p {
+          margin: 0 0 10px;
+        }
+
+        .fixed-sidebar__title {
+          display: flex;
+          align-items: center;
+        }
+    
+        @media screen and (max-width: 1024px) {
+          .fixed-sidebar {
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          .fixed-sidebar {
+            position: static;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="fixed-sidebar">
+        <div>
+            <div class="fixed-sidebar__title">
+                <img src="./img/book.svg"> 
+                <h3 style="color:#97A8CB">Brochure</h3>  
+            </div>
+            <div style="display:flex; align-items: center; margin-top:20px">
+                <img src="./img/arrow.svg"> 
+                <h4 style="color:rgb(0, 51, 161);">Brochure</h4>
+            </div>
+        </div>
+
+        <br/><br/><br/>
+
+
+        <div>
+            <div  class="fixed-sidebar__title">
+                <img src="./img/note.svg">
+                <h3 style="color:#97A8CB"> Dossier technique</h3>
+            </div>
+            <div style="display:flex; align-items: center; margin-top:20px">
+                <img src="./img/arrow.svg"> 
+                <h4 style="color:rgb(0, 51, 161);">Brochure</h4>
+            </div>
+            <div style="display:flex; align-items: center; margin-top:20px">
+                <img src="./img/arrow.svg"> 
+                <h4 style="color:rgb(0, 51, 161);">Brochure</h4>
+            </div>
+            <div style="display:flex; align-items: center; margin-top:20px">
+                <img src="./img/arrow.svg"> 
+                <h4 style="color:rgb(0, 51, 161);">Brochure</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

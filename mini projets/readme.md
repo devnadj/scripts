@@ -1,0 +1,1 @@
+Ce dossier contient un ensemble de mini projet divers permettant de mettre en oeuvre des technologies diverses.
